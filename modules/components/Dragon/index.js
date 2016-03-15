@@ -4,14 +4,13 @@ import { header } from './styles.css'
 import Title from 'react-title-component'
 
 export default React.createClass({
-  render() {
+  render () {
     return (
       <div>
         <Title render={prev => `${prev} | Dragon!`}/>
         <h2 className={header}>RAR!</h2>
-        <img src={dragon} height="400"/>
+        <img src={dragon} height='400'/>
       </div>
     )
   }
 })
-
