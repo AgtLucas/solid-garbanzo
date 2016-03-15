@@ -10,14 +10,14 @@ import Dragon from './components/Dragon'
 
 export default (
   <Route>
-    <Route path="/" component={App}>
+    <Route path='/' component={App}>
       <IndexRoute component={Home}/>
-      <Route path="dragon" component={Dragon}/>
+    <Route path='dragon' component={Dragon}/>
     </Route>
-    <ServerRoute path="/api">
-      <ServerRoute path=":hello" get={hello}/>
+    <ServerRoute path='/api'>
+      <ServerRoute path=':hello' get={hello}/>
     </ServerRoute>
-    <Redirect from="/not-dragon" to="/dragon"/>
-    <Route path="*" status={404} component={NoMatch}/>
+    <Redirect from='/not-dragon' to='/dragon'/>
+    <Route path='*' status={404} component={NoMatch}/>
   </Route>
 )
