@@ -2,7 +2,7 @@ import React from 'react'
 import Title from 'react-title-component'
 
 export default React.createClass({
-  render() {
+  render () {
     return (
       <div>
         <Title render={prev => `${prev} | Home`}/>
@@ -11,4 +11,3 @@ export default React.createClass({
     )
   }
 })
-
