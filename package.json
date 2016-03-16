@@ -14,8 +14,8 @@
     "react-project:start:dev": "eslint modules && react-project start",
     "react-project:start:prod": "rm -rf .build && react-project build && node .build/server.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Lucas",
+  "license": "MIT",
   "dependencies": {
     "babel-cli": "6.5.1",
     "babel-core": "6.5.1",
