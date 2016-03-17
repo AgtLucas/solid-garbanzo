@@ -12,7 +12,7 @@ export default (
   <Route>
     <Route path='/' component={App}>
       <IndexRoute component={Home}/>
-    <Route path='dragon' component={Dragon}/>
+      <Route path='dragon' component={Dragon}/>
     </Route>
     <ServerRoute path='/api'>
       <ServerRoute path=':hello' get={hello}/>
